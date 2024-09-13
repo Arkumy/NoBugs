@@ -1,4 +1,5 @@
 import Book.Book;
+import Car.Car;
 import Clock.Clock;
 import Student.Student;
 import Point.Point;
@@ -10,27 +11,16 @@ public class Main {
             Book book1 = new Book();
 
             book1.setTitle("Бесы");
-            String title1 = book1.getTitle();
-
             book1.setAuthor("Достоевский Ф.М.");
-            String author1 = book1.getAuthor();
-
             book1.setData(1871);
-            int data1 = book1.getData();
-
             book1.display();
         }
 
         {
             Student student1 = new Student();
             student1.setName("Arina");
-            String name1 = student1.getName();
-
             student1.setAverageScore(75);
-            int score1 = student1.getAverageScore();
-
             student1.setRecordBook(123456);
-            int record_book1 = student1.getRecordBook();
             student1.print();
 
         }
@@ -54,19 +44,25 @@ public class Main {
             point1.moveLeft();
             System.out.println("После moveLeft: (" + point1.getX() + ", " + point1.getY() + ")");
 
-        {
-            Clock clock1 = new Clock();
-            clock1.setHours(22);
-            clock1.setMinutes(20);
-            clock1.setSeconds(1);
-            clock1.tick();
-            clock1.readTime();
-
-
-
+            {
+                Clock clock1 = new Clock();
+                clock1.setHours(22);
+                clock1.setMinutes(20);
+                clock1.setSeconds(1);
+                clock1.tick();
+                clock1.readTime();
             }
 
+            {
+                Car car1 = new Car();
+                car1.setMake("BMW");
+                car1.setModel("M6");
+                car1.setYear(2020);
+                car1.start();
+                car1.drive(10000);
+                car1.stop();
 
+            }
         }
     }
 }

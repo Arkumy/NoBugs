@@ -1,5 +1,6 @@
 import Book.Book;
 import Student.Student;
+import Point.Point;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -32,6 +33,33 @@ public class Main {
 
 
         student1.print();
+
+
+
+      }
+
+      {
+         Point point1 = new Point();
+         point1.setX(1);
+         point1.setY(1);
+
+          System.out.println("Начальные координаты: (" + point1.getX() + ", " + point1.getY() + ")");
+
+      point1.moveUp();
+          System.out.println("После moveUp: (" + point1.getX() + ", " + point1.getY() + ")");
+
+      point1.moveRight();
+          System.out.println("После moveRight: (" + point1.getX() + ", " + point1.getY() + ")");
+
+      point1.moveDown();
+          System.out.println("После moveDown: (" + point1.getX() + ", " + point1.getY() + ")");
+
+      point1.moveLeft();
+          System.out.println("После moveLeft: (" + point1.getX() + ", " + point1.getY() + ")");
+
+
+
+
 
 
 

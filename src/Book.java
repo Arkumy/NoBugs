@@ -1,4 +1,6 @@
-public class Book {
+
+
+public class Book implements Displyable {
   String title;
   String author;
   int data;
@@ -32,4 +34,14 @@ public class Book {
       return this.data;
    }
 
+    @Override
+    public void display() {
+        System.out.println("Title: " + this.title);
+        System.out.println("Author: " + this.author);
+        System.out.println("Data: " + this.data);
+    }
+
+
 }
+
+

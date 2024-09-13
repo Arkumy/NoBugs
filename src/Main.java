@@ -6,14 +6,15 @@ public class Main {
 
       book1.setTitle("Бесы");
         String title1 = book1.getTitle();
-        System.out.println(title1);
+
 
       book1.setAuthor("Достоевский Ф.М.");
         String author1 = book1.getAuthor();
-        System.out.println(author1);
 
       book1.setData(1871);
         int data1 = book1.getData();
-        System.out.println(data1);
+
+      book1.display();
+
     }
 }
